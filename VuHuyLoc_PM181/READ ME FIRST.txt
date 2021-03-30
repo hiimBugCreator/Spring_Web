@@ -1,0 +1,19 @@
+Use email:u3@abc.abc password:3 to log into admin page
+Use email:user1@gmail.com password:1 to log into shop page
+Feature:
+ + Get data from database(mySql)
+ + Insert/ Update/ Delete : product
+ + Update/ Delete: account
+ + Register a new account for GUEST(to log into shop page)
+ + Add many products into a cart
+ + Add many diferance products into a cart
+ + When submit a bill, amount of products will be auto update
+
+
+--------------------------------------------------------------------------------------------------------
+
+Coding by HuyLoc from 14:42, 26 March 2020 to 16:05, 29 March 2020
+
+--------------------------------------------------------------------------------------------------------
+
+version 1.0

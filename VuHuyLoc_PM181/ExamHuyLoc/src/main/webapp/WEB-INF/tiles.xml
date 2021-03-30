@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" 
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">  
+       
+<tiles-definitions>  
+
+	<definition name="login" template="/WEB-INF/layout/layout2.jsp">  
+        <put-attribute name="body" value="/WEB-INF/views/login.jsp" />  
+    </definition>
+    <definition name="signup" template="/WEB-INF/layout/layout3.jsp">  
+        <put-attribute name="body" value="/WEB-INF/views/signup.jsp" />  
+    </definition>
+    
+    
+	<!-- Layout tong -->
+    <definition name="base.definition" template="/WEB-INF/layout/layout.jsp">  
+        <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />  
+        <put-attribute name="header" value="/WEB-INF/layout/header.jsp" />  
+    </definition>  
+    
+     
+	<!--  trang home -->
+    <definition name="home" extends="base.definition">  
+        <put-attribute name="body" value="/WEB-INF/views/home.jsp" />  
+    </definition>    
+    
+     <!--  trang shop -->
+    <definition name="shop" extends="base.definition">  
+        <put-attribute name="body" value="/WEB-INF/views/shop.jsp" />  
+    </definition> 
+     
+    <definition name="checkout" extends="base.definition">  
+        <put-attribute name="body" value="/WEB-INF/views/checkout.jsp" />  
+    </definition>  
+    <definition name="cart" extends="base.definition">  
+        <put-attribute name="body" value="/WEB-INF/views/cart.jsp" />  
+    </definition>  
+    <definition name="product-details" extends="base.definition">  
+        <put-attribute name="body" value="/WEB-INF/views/product-details.jsp" />  
+    </definition>  
+    
+    
+    <definition name="base.definition1" template="/WEB-INF/layout/layout1.jsp"> 
+        <put-attribute name="header" value="/WEB-INF/layout/header.jsp" />  
+    </definition>
+    <definition name="tks" extends="base.definition1">  
+        <put-attribute name="body" value="/WEB-INF/views/tks.jsp" />  
+    </definition>
+    
+    <!-- Layout admin -->
+    <definition name="ad.p" template="/WEB-INF/layout/layout_admin.jsp">  
+        <put-attribute name="footer" value="/WEB-INF/layout/footer_admin.jsp" />  
+        <put-attribute name="header" value="/WEB-INF/layout/header_admin.jsp" />  
+    </definition>  
+    <definition name="manager" extends="ad.p">  
+        <put-attribute name="body" value="/WEB-INF/views/manager-products.jsp" />  
+    </definition> 
+    
+    <definition name="invoice-list" extends="ad.p">  
+        <put-attribute name="body" value="/WEB-INF/views/invoice-list.jsp" />  
+    </definition> 
+    
+    <definition name="invoice-details" extends="ad.p">  
+        <put-attribute name="body" value="/WEB-INF/views/invoice-details.jsp" />  
+    </definition> 
+    
+    <definition name="edit-product" extends="ad.p">  
+        <put-attribute name="body" value="/WEB-INF/views/edit-product.jsp" />  
+    </definition>
+    
+    <definition name="edit-u" extends="ad.p">  
+        <put-attribute name="body" value="/WEB-INF/views/edit-u.jsp" />  
+    </definition>
+    
+    <definition name="add-product" extends="ad.p">  
+        <put-attribute name="body" value="/WEB-INF/views/add-product.jsp" />  
+    </definition>
+    
+    <definition name="um" extends="ad.p">  
+        <put-attribute name="body" value="/WEB-INF/views/u.jsp" />  
+    </definition>
+    
+</tiles-definitions>  
